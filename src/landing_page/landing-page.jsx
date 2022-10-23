@@ -4,9 +4,10 @@ export default class LandingPage extends Component {
   render() {
     return (
       <div>
-        <nav class="navbar sticky-top navbar-expand-lg nav-bar-background navbar-light bg-light">
+        <nav className="navbar sticky-top navbar-expand-lg nav-bar-background navbar-light bg-light">
+        <a class="navbar-brand" href="#">TinDog</a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo01"
@@ -14,12 +15,12 @@ export default class LandingPage extends Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand">Ayman </a>
-          <ul class="navbar-nav ms-auto">
-          <li className="nav-item dropdown">
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a className="navbar-brand">Ayman </a>
+          <ul className="navbar-nav ms-auto">
+          {/* <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
         </a>
@@ -29,56 +30,31 @@ export default class LandingPage extends Component {
           <div className="dropdown-divider"></div>
           <a className="dropdown-item" href="#">Something else here</a>
         </div>
-      </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">
+      </li> */}
+            <li className="nav-item">
+              <a className="nav-link" href="">
                 contact
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">
+            <li className="nav-item">
+              <a className="nav-link" href="">
                 Pricing
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">
+            <li className="nav-item">
+              <a className="nav-link" href="">
                 Download
               </a>
             </li>
-            
-            
-      
-            
           </ul>
         </div>
       </nav>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
-      <h1>Ayman</h1>
+      <h1>Meet interesting dogs nearby</h1>
+      <div className="block">
+          <button type="button" class="btn btn-primary">Download</button>
+          <button type="button" class="btn btn-primary">Download</button>
+      </div>
+      <img src={require("../images/iphone6.png")}></img>
       </div>
     );
   }
