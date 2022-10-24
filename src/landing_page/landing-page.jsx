@@ -4,8 +4,9 @@ export default class LandingPage extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar sticky-top navbar-expand-lg nav-bar-background navbar-light bg-light">
-        <a class="navbar-brand" href="#">TinDog</a>
+        <div className="container-fluid header-section">
+        <nav className="navbar sticky-top navbar-expand-lg nav-bar-background navbar-light">
+        <a class="navbar-brand title-txt" href="#">tinDog</a>
         <button
           className="navbar-toggler"
           type="button"
@@ -18,19 +19,7 @@ export default class LandingPage extends Component {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a className="navbar-brand">Ayman </a>
           <ul className="navbar-nav ms-auto">
-          {/* <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a className="dropdown-item">Action</a>
-          <a className="dropdown-item">Another action</a>
-          <div className="dropdown-divider"></div>
-          <a className="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li> */}
             <li className="nav-item">
               <a className="nav-link" href="">
                 contact
@@ -49,12 +38,55 @@ export default class LandingPage extends Component {
           </ul>
         </div>
       </nav>
-      <h1>Meet interesting dogs nearby</h1>
-      <div className="block">
-          <button type="button" class="btn btn-primary">Download</button>
-          <button type="button" class="btn btn-primary">Download</button>
+     
+      <div className="row">
+        <div className="col-lg-6">
+        <p className="title-txt">Meet new and interesting dogs nearby</p>
+      <div className="download-btn">
+          <button className="btn btn-outline-dark btn-lg"><span className="fa-brands fa-apple"></span>Download</button>    
+          <button  className="btn btn-outline-light download-btn btn-lg"><img src={require("../images/apple.svg")}></img>  Download</button>
       </div>
-      <img src={require("../images/iphone6.png")}></img>
+      
+        </div>
+      <img className="col-lg-4 rotate-img iphone-dog-img" src={require("../images/iphone6.png")}></img>
+      </div>
+        </div>
+        <div className="second-section">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <img className="second-section-img" src={require("../images/tick-sign.png")}></img>
+              <p className="second-section-title">Easy to use</p>
+              <p className="second-section-sub-title">so easy to use even your<br></br> dog could do it</p>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+            
+              <img className="second-section-img" src={require("../images/tick-sign.png")}></img>
+              <p className="second-section-title">Elite Clientele</p>
+              <p className="second-section-sub-title"> we have all the dogs,the<br></br> greatest dogs.</p>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <img className="second-section-img" src={require("../images/heart.jpeg")}></img>
+              <p className="second-section-title">Guaranteed to work.</p>
+              <p className="second-section-sub-title">Find the love of your dog's life<br></br> or your money back.</p>
+            </div>
+          </div>
+        </div>
+        <div className="third-section">
+            <div>
+              <p className="third-section-title"> I no longer have to sniff other dogs for <br/> love. I've found the  hottest Corgi on <br/> TinDog. Woof.</p>    
+            </div>
+            <div>
+                  <img className="third-section-images" src={require("../images/dog-img.jpg")}></img>
+                  <span className="third-section-sub-title">Puble NewYork</span>
+              </div>
+        </div>
+        <div className="logo-sections ">
+          
+          <img className="logo-section-imgs" src={require("../images/TechCrunch.png")}></img>
+          <img className="logo-section-imgs" src={require("../images/tnw.png")}></img>
+          <img className="logo-section-imgs" src={require("../images/mashable.png")}></img>
+          <img className="logo-section-imgs" src={require("../images/bizinsider.png")}></img>
+        </div>
       </div>
     );
   }
